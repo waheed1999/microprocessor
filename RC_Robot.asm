@@ -10,7 +10,7 @@
   .ORG 0X1A     // The address of Uart recive int handeller 
   jmp RXC_COMP // jump to handeller function
 
- // Gurde erea 
+ // Guard erea 
 
  .ORG 0X66 // Start of Internal SRAM
  
