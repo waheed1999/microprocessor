@@ -18,7 +18,7 @@
  
  
  MAIN:
- // setup stack pointer 
+ // set up stack pointer 
 LDI R16,LOW(RAMEND)
 OUT SPL,R16
 LDI R16,HIGH(RAMEND)
