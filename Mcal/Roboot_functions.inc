@@ -40,6 +40,7 @@ GO_RIGHIT:
  CBI PORTB,PIN2 
  SBI PORTB,PIN3
 
+
 RET
 #endif
 
