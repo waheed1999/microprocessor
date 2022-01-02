@@ -42,5 +42,8 @@ GO_RIGHIT:
 
 
 RET
+buzzer_on: 
+          SBI PORTB , PB4
+          
 #endif
 
