@@ -93,9 +93,12 @@ LDI R19 , 'V'
  BRNE BUZZER_OFF
  CALL BUZZER_ON
 BUZZER_OFF:
-          SBI DDRB , PB4
-          CBI PORTB , PB4     ;CLEAR PB4
-
+          
+LDI R19,'v'
+ SUB R19,R20
+ BRNE BUZZER_ON
+ CALL BUZZER_OFF
+ BUZZER_ON :
 #endif
 
 
