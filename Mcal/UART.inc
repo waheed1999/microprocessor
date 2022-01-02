@@ -87,7 +87,11 @@ SUB R19,R20 // To change Z flag
 BRNE NOT_RIGHT // We watching Z flag IF (Z==0)->BRANCH
 CALL GO_RIGHIT
 NOT_RIGHT:
-
+ 
+LDI R19 , 'V'
+ SUB R19,R20 
+ BRNE BUZZER_OFF
+ CALL BUZZER_ON
 
 
 RETI
