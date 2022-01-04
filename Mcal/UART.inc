@@ -74,11 +74,7 @@ NOT_BACK:
 
 
 
-LDI R19,'L'
-SUB R19,R20 // To change Z flag
-BRNE NOT_LEFT // We watching Z flag IF (Z==0)->BRANCH
-CALL GO_LEFT
-NOT_LEFT:
+
 
 
 

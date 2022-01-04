@@ -23,6 +23,8 @@ RET
 
 
 Timer0_stop :  // This function stop time count  Hent : ( No clock source to timer0 "TCCR0" )
+
+
              LDI R20, 0x00
 			 OUT TCCR0 , R20 
 
