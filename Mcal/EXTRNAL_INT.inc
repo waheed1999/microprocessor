@@ -3,6 +3,7 @@
 .ORG 0X540
 INT0_EN :
 // INT0 ON Rising adge
+// intro
 
 IN R18, MCUCR // Read MCUCR value to R18 
 LDI R19,0B00000011 // Set the target Bits to 1
