@@ -1,5 +1,7 @@
 .INCLUDE "UART.INC"
  .INCLUDE "EXTRNAL_INT.INC"
+  .INCLUDE "TIMER.INC"
+ .INCLUDE "Ultrasonic.INC"
 
  // VECTOR table
 
@@ -35,6 +37,8 @@ VOID_SET:
 CALL UART_START // Intializing UART 
 
 CALL INT0_EN // Enable INT0 PIN
+CALL TIMER 
+CALL Ultrasonic
 LDI R18,0X0F
 IN R17,PINB // Read the value of PINB
 OR R18,R17
