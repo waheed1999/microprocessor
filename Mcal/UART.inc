@@ -6,6 +6,7 @@
 .ORG 0X500
 .EQU PIN0 =0
 .EQU PIN1 =1
+ 
 .EQU PIN2 =2
 .EQU PIN3 =3
 .EQU PIN4 =4
@@ -71,6 +72,13 @@ SUB R19,R20 // To change Z flag
 BRNE NOT_BACK // We watching Z flag IF (Z==0)->BRANCH
 CALL GO_BACK
 NOT_BACK:
+
+
+LDI R19,'L'
+SUB R19,R20 // To change Z flag
+BRNE NOT_LEFT // We watching Z flag IF (Z==0)->BRANCH
+CALL GO_LEFT
+NOT_LEFT:
 
 
 

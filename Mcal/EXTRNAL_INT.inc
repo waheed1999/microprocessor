@@ -3,6 +3,7 @@
 .ORG 0X540
 INT0_EN :
 // INT0 ON Rising adge
+// intro
 
 IN R18, MCUCR // Read MCUCR value to R18 
 LDI R19,0B00000011 // Set the target Bits to 1
@@ -13,6 +14,8 @@ OUT MCUCR,R18 // Load MCUCR value
 //_____________________
 IN R18, GICR // Read GICR value to R18 
 LDI R19,0B01000000 // Set the target Bits to 1
+
+
   
   
 OR R18,R19 // To make sur that no Bit will chang exept the target bits
@@ -30,6 +33,7 @@ INT0_HANDL :
 
 
 // Write What will happen in case of Rising adge Int0
+
 
 
 RETI
