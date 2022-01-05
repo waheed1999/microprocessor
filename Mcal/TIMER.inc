@@ -31,6 +31,7 @@ RET
 Timer0_get:  // This function get the value of time
            LDI R20 , 0x00
 		   LDI R20 , (1<<TOV0)
+		   
 		   OUT TIFR ,R20
 RET
 
