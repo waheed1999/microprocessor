@@ -3,7 +3,7 @@
 .ORG 0X570
 
 
-Timer0_config :  // This function initializ the timer0 in normal mode
+Timer0_config :  // This function initialize the timer0 in normal mode
 	  LDI R20 , -255
 	  OUT TCNT0 , R20 ;;;
 	  LDI R20 , 0x02  ;;;
