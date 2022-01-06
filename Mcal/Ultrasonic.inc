@@ -17,7 +17,7 @@ Ultrasonic_GET://Get the value of ADC PIN0
 	BRMI BACK
 	RET 
 BACK:
-CALL GO_BACK
+CALL GO_BACK    ; make car back
 RET
 #endif
 
