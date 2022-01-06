@@ -39,6 +39,4 @@ can be used for puplic
 
 and in dangerious places  like factories to sense the temperature
 
-### output
-screenshot
 
