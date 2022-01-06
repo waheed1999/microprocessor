@@ -4,6 +4,7 @@
  // VECTOR table
 
  .ORG 0X00
+ 
  JMP MAIN // Rest code  
  JMP INT0_HANDL // ex0_int
 
