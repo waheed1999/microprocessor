@@ -33,11 +33,26 @@ RET
 
 INT0_HANDL :
 
-
 // Write What will happen in case of Rising adge Int0
+IN R20,PINA
+COM R20
+OUT PORTA,R20
 
-
+RCALL DELAY
 
 RETI
 
+
+
+DELAY:
+LDI R16,0XFF
+LDI R17,255
+L1 :
+DEC R16
+L2:
+DEC R17
+BRNE L2
+BRNE L1
+
+RET
 #endif
