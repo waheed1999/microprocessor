@@ -38,8 +38,8 @@ VOID_SET:
 CALL UART_START // Intializing UART 
 
 CALL INT0_EN // Enable INT0 PIN
-CALL TIMER 
-CALL Ultrasonic
+CALL Timer0_config 
+CALL ultrasonic_config
 LDI R18,0X0F
 IN R17,PINB // Read the value of PINB
 OR R18,R17
