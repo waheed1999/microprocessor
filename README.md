@@ -9,7 +9,7 @@ RC-Robot
 USING ASEMBLEY LANGUAGE
 This robot can go ahead ,return and rotate by 360 degree right or left 
 using two motors .
-the robot go back when meet an obstacle with distance 5cm.
+the robot go back when meet an obstacle .
 
  
 
