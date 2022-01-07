@@ -51,5 +51,15 @@ GO_RIGHIT:
 
 
 RET
+BUZZER_ON: 
+          SBI DDRB , PB4
+          SBI PORTB , PB4       ;SET PB4
+RET
+
+BUZZER_OFF:
+          SBI DDRB , PB4
+          CBI PORTB , PB4     ;CLEAR PB4
+ RET  
+ 
 #endif
 

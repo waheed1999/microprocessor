@@ -32,12 +32,19 @@ RET
 
 
 INT0_HANDL :
-
 // Write What will happen in case of Rising adge Int0
 IN R20,PINA
 COM R20
 OUT PORTA,R20
 
+LDI R23,0x04
+	out TCCR0, R23
+	sbi portb,pb0
+	   
+HERE :
+   SBIC PORTB,2     ;echo pin 
+	rjmp HERE 
+	reti
 RCALL DELAY
 
 RETI
