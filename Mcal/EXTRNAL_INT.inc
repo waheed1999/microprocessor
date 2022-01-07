@@ -1,6 +1,6 @@
 #ifndef INT_H_
 #define INT_H_
-.ORG 0X540
+.ORG 0X550
 INT0_EN :
 // INT0 ON Rising adge
 // intro
